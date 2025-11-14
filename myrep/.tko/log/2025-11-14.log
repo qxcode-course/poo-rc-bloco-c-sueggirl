@@ -1,0 +1,5 @@
+2025-11-14 17:11:19, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-14 17:11:21, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
+2025-11-14 17:11:38, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
+2025-11-14 17:11:38, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
+2025-11-14 17:11:39, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
