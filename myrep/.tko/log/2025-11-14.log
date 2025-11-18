@@ -3,3 +3,5 @@
 2025-11-14 17:11:38, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
 2025-11-14 17:11:38, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
 2025-11-14 17:11:39, EXEC, v:1, k:poo@array, mode:LOCK, rate:100
+2025-11-14 17:25:21, EXEC, v:1, k:poo@array, mode:LOCK, rate:100, size:3
+2025-11-14 17:25:27, EXEC, v:1, k:poo@array, mode:LOCK, rate:100

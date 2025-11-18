@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-17_23-43-09",
+            "content": "@@ -1,52 +0,0 @@\n-Class Lapiseira:%0A    def __init__%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A    \n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-18_10-22-23",
+            "content": "@@ -30,16 +30,23 @@\n it__%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A\n+%0A%0A%0A    \n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-11-18_10-30-23",
+            "content": "@@ -30,13 +30,16 @@\n it__\n-(self, )\n+%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A\n %0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-11-18_10-46-06",
+            "content": "Class Lapiseira:\n    def __init__(self, )\n",
+            "lines": "2"
+        }
+    ]
+}
