@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-18_23-38-16",
+            "content": "@@ -1,103 +0,0 @@\n-class Trampolim:%0A    def __init__(self,)%0A        %0A%0A%0A%0A%0Aclass Crianca:%0A    def __init__(self, ):%0A        \n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-18_23-46-15",
+            "content": "@@ -96,17 +96,8 @@\n         \n-%0A        \n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-11-19_00-01-55",
+            "content": "@@ -97,12 +97,16 @@\n        %0A    \n+    \n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-11-19_08-05-24",
+            "content": "@@ -32,17 +32,16 @@\n __(self,\n- \n )%0A      \n@@ -46,29 +46,8 @@\n     \n-self._playing: list%5B%5D\n %0A%0A%0A%0A\n@@ -88,16 +88,21 @@\n elf, ):%0A        \n+%0A    \n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-11-19_08-14-15",
+            "content": "@@ -3,15 +3,17 @@\n ass \n-Crianca\n+Trampolim\n :%0A  \n@@ -37,287 +37,57 @@\n lf, \n-nome: str, idade: int):%0A        self.nome = nome%0A        self.idade = int(idade)%0A    %0A    def getNome(self) -%3E str:%0A        return self.nome%0A    %0A    def getIdade(self) -%3E int:%0A        return self.idade%0A    %0A    def getNome(self) -%3E str:%0A        return self.nome%0A%0Aclass Trampolim\n+)%0A        self._playing: list%5B%5D%0A%0A%0A%0A%0Aclass Crianca\n :%0A  \n@@ -105,16 +105,18 @@\n t__(self\n+, \n ):%0A     \n@@ -122,55 +122,4 @@\n     \n-self.brincando = %5B%5D%0A        self.esperando = 0 %0A%0A%0A%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-11-19_08-26-21",
+            "content": "@@ -247,17 +247,17 @@\n     def \n-s\n+g\n etNome(s\n@@ -273,36 +273,36 @@\n tr:%0A        \n-self.nome = \n+return self.\n nome%0A%0Aclass \n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-11-19_08-34-54",
+            "content": "@@ -259,27 +259,16 @@\n ome(self\n-, nome: str\n ) -%3E str\n@@ -299,155 +299,8 @@\n me%0A%0A\n-    def setIdade(self, idade: int):%0A        self.idade = int(idade)%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.nome%7D:%7Bself.idade%7D%22%0A    %0A\n clas\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-11-19_08-40-03",
+            "content": "@@ -512,39 +512,24 @@\n lf.brincando\n-: list%5BCrianca%5D\n  = %5B%5D%0A      \n@@ -548,246 +548,13 @@\n ando\n-: list%5BCrianca%5D = %5B%5D%0A%0A    def irBrincar(self, nome: str, listC: list%5BCrianca%5D) -%3E Crianca %7C None:%0A        for i, crianca in enumerate(listC):%0A            if crianca.getNome() == nome:%0A                return listC.pop(i)%0A        return None\n+ = 0 %0A\n %0A%0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-11-19_09-00-52",
+            "content": "@@ -589,30 +589,25 @@\n     def \n-removeFromList\n+irBrincar\n (self, n\n@@ -803,802 +803,6 @@\n one%0A\n-    %0A    def removerCrianca(self, nome: str) -%3E Crianca %7C None:%0A        crianca = self.removeFromList(nome, self.esperando)%0A        if crianca is not None:%0A            return crianca%0A        return self.removeFromList(nome, self.brincando)%0A    %0A    def chegar(self, crianca: Crianca):%0A        self.esperando.insert(0, crianca)%0A%0A    def entrar(self):%0A        crianca = self.esperando.pop(-1)%0A        self.brincando.insert(0, crianca)%0A    %0A    def sair(self):%0A        if len(self.brincando) %3E 0:%0A            crianca = self.brincando.pop(-1)%0A            self.esperando.insert(0, crianca)%0A%0A    def _str_(self):%0A        espera = %22, %22.join(str(x) for x in self.esperando)%0A        brincando = %22, %22.join(str(x) for x in self.brincando)%0A        return f%22%5B%7Bespera%7D%5D =%3E %5B%7Bbrincando%7D%5D%22%0A    %0Adef main():%0Amain()\n+%0A\n %0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-11-19_09-08-49",
+            "content": "@@ -1598,727 +1598,8 @@\n n():\n-%0A%0A    trampolim = Trampolim()%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split()%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(trampolim)%0A        elif args%5B0%5D == %22arrive%22:%0A            nome = args%5B1%5D%0A            idade = int(args%5B2%5D)%0A            trampolim.chegar(Crianca(nome, idade))%0A        elif args%5B0%5D == %22enter%22:%0A            trampolim.entrar()%0A        elif args%5B0%5D == %22leave%22:%0A            trampolim.sair()%0A        elif args%5B0%5D == %22remove%22:%0A            nome = args%5B1%5D%0A            crianca = trampolim.removerCrianca(nome)%0A            if crianca is None:%0A                print(f%22fail: %7Bnome%7D nao esta no pula-pula%22)\n %0Amai\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-19_09-11-18",
+            "content": "@@ -1394,31 +1394,29 @@\n a)%0A%0A    def \n-_\n _str_\n-_\n (self):%0A    \n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-11-19_09-12-34",
+            "content": "class Crianca:\n    def __init__(self, nome: str, idade: int):\n        self.nome = nome\n        self.idade = int(idade)\n    \n    def getNome(self) -> str:\n        return self.nome\n    \n    def getIdade(self) -> int:\n        return self.idade\n    \n    def setNome(self, nome: str) -> str:\n        self.nome = nome\n\n    def setIdade(self, idade: int):\n        self.idade = int(idade)\n\n    def __str__(self) -> str:\n        return f\"{self.nome}:{self.idade}\"\n    \nclass Trampolim:\n    def __init__(self):\n        self.brincando: list[Crianca] = []\n        self.esperando: list[Crianca] = []\n\n    def removeFromList(self, nome: str, listC: list[Crianca]) -> Crianca | None:\n        for i, crianca in enumerate(listC):\n            if crianca.getNome() == nome:\n                return listC.pop(i)\n        return None\n    \n    def removerCrianca(self, nome: str) -> Crianca | None:\n        crianca = self.removeFromList(nome, self.esperando)\n        if crianca is not None:\n            return crianca\n        return self.removeFromList(nome, self.brincando)\n    \n    def chegar(self, crianca: Crianca):\n        self.esperando.insert(0, crianca)\n\n    def entrar(self):\n        crianca = self.esperando.pop(-1)\n        self.brincando.insert(0, crianca)\n    \n    def sair(self):\n        if len(self.brincando) > 0:\n            crianca = self.brincando.pop(-1)\n            self.esperando.insert(0, crianca)\n\n    def __str__(self):\n        espera = \", \".join(str(x) for x in self.esperando)\n        brincando = \", \".join(str(x) for x in self.brincando)\n        return f\"[{espera}] => [{brincando}]\"\n    \ndef main():\n\n    trampolim = Trampolim()\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args: list[str] = line.split()\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(trampolim)\n        elif args[0] == \"arrive\":\n            nome = args[1]\n            idade = int(args[2])\n            trampolim.chegar(Crianca(nome, idade))\n        elif args[0] == \"enter\":\n            trampolim.entrar()\n        elif args[0] == \"leave\":\n            trampolim.sair()\n        elif args[0] == \"remove\":\n            nome = args[1]\n            crianca = trampolim.removerCrianca(nome)\n            if crianca is None:\n                print(f\"fail: {nome} nao esta no pula-pula\")\nmain()\n",
+            "lines": "79"
+        }
+    ]
+}

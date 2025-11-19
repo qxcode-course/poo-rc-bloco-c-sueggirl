@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: /home/tharsyla/Documentos/poo3/poo-rc-bloco-c-sueggirl/myrep/.tko/cache/poo/Readme.md
-  cache_timestamp: '2025-11-18 16:50:44'
+  cache_timestamp: '2025-11-19 08:04:34'
   filters:
   - listas
 expanded:
@@ -21,6 +21,8 @@ expanded:
 tasks:
   poo@array: '{rate:90, iagen:2, alone:8, study:250}'
   poo@budega: '{rate:100, human:2, guide:2, alone:7, study:280}'
+  poo@lapiseira: '{rate:100, human:2, alone:10, study:325}'
+  poo@pula-pula: '{rate:100, human:2, alone:8, study:200}'
 flags:
   quests: 0
   tracks: 0
@@ -28,4 +30,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@lapiseira
+selected: poo@cinema
