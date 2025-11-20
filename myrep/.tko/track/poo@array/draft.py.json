@@ -57,8 +57,43 @@
         },
         {
             "label": "2025-11-17_23-40-24",
-            "content": "import random\n\nclass Foo:\n    def __init__(self, num:int):\n        self.num = num\n    def __str__(self):\n        return f\"{self.num}\"\n    def __repr__(self):\n        return str(self)\n\nlista_num = []\nlista_obj = []\n\nlista_num_cheio = [0, 1, 2, 3, 4, 5]\nlista_obj_cheio = [Foo(1), Foo(2), Foo(3)]\n\nprint(\"Tamanho das listas iniciais:\")\nprint(len(lista_num_cheio))\nprint(len(lista_obj_cheio))\n\nlista_num.append(10)\nlista_obj_cheio.append(Foo(4))\n\nprint(\"apos append:\")\nprint(lista_num)\nprint(lista_obj_cheio)\n\nlista_num_cheio.pop()\nlista_obj_cheio.pop()\nprint(\"apos pop:\")\nprint(lista_num_cheio)\nprint(lista_obj_cheio)\n\nlista_num_cheio.insert(0, -1)\nlista_obj_cheio.insert(0, Foo(99))\n\nprint(\"apos insert:\")\nprint(lista_num_cheio)\nprint(lista_obj_cheio)\n\nlista_num_cheio.remove(2)\nlista_obj_cheio.remove(lista_obj_cheio[2])\n\nprint(\"apos apagar:\")\nprint(lista_num)\nprint(lista_obj)\n\n\narr_random = [random.randint(0, 50) for _ in range(6)]\nprint(\"array aleat\u00f3rio:\")\nprint(arr_random)\n\narr_seq = list(range(10))\nprint(\"array em sequencia:\")\nprint(arr_seq)\n\nprint(\"acessando elementos:\")\nprint(\"Index 4:\", arr_seq[4])\nprint(\"\u00daltimo:\", arr_seq[-1])\n\nprint(\"Array como string:\")\nprint(\"-\".join(map(str, arr_seq)))\n\nprint(\"Array com pares\")\npares = [x for x in arr_seq if x % 2 == 0]\nquadrados = [x**2 for x in pares]\n\nprint(\"Pares:\", pares)\nprint(\"Quadrados dos pares:\", quadrados)\n\narr_seq.sort(reverse=True)\nprint(\"array em ordem decrescente:\")\nprint(arr_seq)\n\nnum = 5 \nprint(f\"Buscando n\u00famero {num}...\")\nif num in arr_seq:\n    print(f\"{num} foi encontrado.\")\nelse:\n    print(f\"{num} N\u00c3O foi encontrado.\")\n\ndef buscar_elemento(arr, valor):\n    return f\"{valor} est\u00e1 na lista.\" if valor in arr else f\"{valor} n\u00e3o est\u00e1 na lista.\"\n\nprint(buscar_elemento(arr_seq, num))\n\narr_slice = list(range(20))\nprint(\"Slice 5:15:2\")\nprint(arr_slice[5:15:2])\n\nlista_extendida = [1, 2, 3]\nlista_extendida.extend([4, 5, 6])\nprint(\"Ap\u00f3s extend:\")\nprint(lista_extendida)\n\nnums = [10, 3, 6, 2, 8, 4]\nprint(\"Verifica\u00e7\u00f5es:\")\nprint(\"Tem n\u00famero par?:\", any(n % 2 == 0 for n in nums))\nprint(\"Todos s\u00e3o positivos?:\", all(n > 0 for n in nums))\n\nprint(\"Valores estat\u00edsticos:\")\nprint(\"M\u00e1x:\", max(nums))\nprint(\"M\u00edn:\", min(nums))\nprint(\"Soma:\", sum(nums))\nprint(\"Ordenado:\", sorted(nums))\n\nmatriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\n",
+            "content": "@@ -296,17 +296,17 @@\n %0Aprint(%22\n-t\n+T\n amanho d\n@@ -446,17 +446,17 @@\n rint(%22ap\n-%C3%B3\n+o\n s append\n@@ -544,17 +544,16 @@\n o.pop()%0A\n-%0A\n print(%22a\n",
             "lines": "107"
+        },
+        {
+            "label": "2025-11-19_11-20-03",
+            "content": "@@ -554,17 +554,17 @@\n rint(%22ap\n-%C3%B3\n+o\n s pop:%22)\n@@ -686,17 +686,17 @@\n rint(%22ap\n-%C3%B3\n+o\n s insert\n@@ -821,25 +821,25 @@\n )%0A%0Aprint(%22ap\n-%C3%B3\n+o\n s apagar:%22)%0A\n@@ -873,16 +873,17 @@\n a_obj)%0A%0A\n+%0A\n arr_rand\n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-11-19_11-23-06",
+            "content": "@@ -873,17 +873,16 @@\n a_obj)%0A%0A\n-%0A\n arr_rand\n@@ -1023,9 +1023,9 @@\n sequ\n-%C3%AA\n+e\n ncia\n@@ -1081,17 +1081,17 @@\n %0Aprint(%22\n-i\n+I\n ndex 4:%22\n@@ -1111,17 +1111,17 @@\n %0Aprint(%22\n-%C3%BA\n+%C3%9A\n ltimo:%22,\n@@ -1134,33 +1134,33 @@\n eq%5B-1%5D)%0A%0Aprint(%22\n-a\n+A\n rray como string\n@@ -1202,25 +1202,25 @@\n )))%0A%0Aprint(%22\n-a\n+A\n rray com par\n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-11-19_11-27-50",
+            "content": "@@ -1310,17 +1310,17 @@\n %0Aprint(%22\n-p\n+P\n ares:%22, \n@@ -1333,17 +1333,17 @@\n %0Aprint(%22\n-q\n+Q\n uadrados\n@@ -1465,17 +1465,17 @@\n print(f%22\n-b\n+B\n uscando \n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-11-19_11-30-03",
+            "content": "@@ -1571,19 +1571,19 @@\n f%22%7Bnum%7D \n-n%C3%A3o\n+N%C3%83O\n  foi enc\n@@ -1789,17 +1789,17 @@\n %0Aprint(%22\n-s\n+S\n lice 5:1\n@@ -1895,25 +1895,25 @@\n  6%5D)%0Aprint(%22\n-a\n+A\n p%C3%B3s extend:%22\n@@ -1995,17 +1995,17 @@\n %0Aprint(%22\n-t\n+T\n em n%C3%BAmer\n@@ -2052,17 +2052,17 @@\n %0Aprint(%22\n-t\n+T\n odos s%C3%A3o\n@@ -2110,17 +2110,17 @@\n %0Aprint(%22\n-v\n+V\n alores e\n@@ -2141,17 +2141,17 @@\n %0Aprint(%22\n-m\n+M\n %C3%A1x:%22, ma\n@@ -2166,17 +2166,17 @@\n %0Aprint(%22\n-m\n+M\n %C3%ADn:%22, mi\n@@ -2191,17 +2191,17 @@\n %0Aprint(%22\n-s\n+S\n oma:%22, s\n@@ -2217,17 +2217,17 @@\n %0Aprint(%22\n-o\n+O\n rdenado:\n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-11-19_14-33-23",
+            "content": "@@ -2286,8 +2286,9 @@\n , 8, 9%5D%5D\n+%0A\n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-11-19_16-00-46",
+            "content": "@@ -2286,9 +2286,8 @@\n , 8, 9%5D%5D\n-%0A\n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-11-19_16-00-52",
+            "content": "import random\n\nclass Foo:\n    def __init__(self, num:int):\n        self.num = num\n    def __str__(self):\n        return f\"{self.num}\"\n    def __repr__(self):\n        return str(self)\n\nlista_num = []\nlista_obj = []\n\nlista_num_cheio = [0, 1, 2, 3, 4, 5]\nlista_obj_cheio = [Foo(1), Foo(2), Foo(3)]\n\nprint(\"tamanho das listas iniciais:\")\nprint(len(lista_num_cheio))\nprint(len(lista_obj_cheio))\n\nlista_num.append(10)\nlista_obj_cheio.append(Foo(4))\n\nprint(\"ap\u00f3s append:\")\nprint(lista_num)\nprint(lista_obj_cheio)\n\nlista_num_cheio.pop()\nlista_obj_cheio.pop()\n\nprint(\"ap\u00f3s pop:\")\nprint(lista_num_cheio)\nprint(lista_obj_cheio)\n\nlista_num_cheio.insert(0, -1)\nlista_obj_cheio.insert(0, Foo(99))\n\nprint(\"ap\u00f3s insert:\")\nprint(lista_num_cheio)\nprint(lista_obj_cheio)\n\nlista_num_cheio.remove(2)\nlista_obj_cheio.remove(lista_obj_cheio[2])\n\nprint(\"ap\u00f3s apagar:\")\nprint(lista_num)\nprint(lista_obj)\n\n\narr_random = [random.randint(0, 50) for _ in range(6)]\nprint(\"array aleat\u00f3rio:\")\nprint(arr_random)\n\narr_seq = list(range(10))\nprint(\"array em sequ\u00eancia:\")\nprint(arr_seq)\n\nprint(\"acessando elementos:\")\nprint(\"index 4:\", arr_seq[4])\nprint(\"\u00faltimo:\", arr_seq[-1])\n\nprint(\"array como string:\")\nprint(\"-\".join(map(str, arr_seq)))\n\nprint(\"array com pares\")\npares = [x for x in arr_seq if x % 2 == 0]\nquadrados = [x**2 for x in pares]\n\nprint(\"pares:\", pares)\nprint(\"quadrados dos pares:\", quadrados)\n\narr_seq.sort(reverse=True)\nprint(\"array em ordem decrescente:\")\nprint(arr_seq)\n\nnum = 5 \nprint(f\"buscando n\u00famero {num}...\")\nif num in arr_seq:\n    print(f\"{num} foi encontrado.\")\nelse:\n    print(f\"{num} n\u00e3o foi encontrado.\")\n\ndef buscar_elemento(arr, valor):\n    return f\"{valor} est\u00e1 na lista.\" if valor in arr else f\"{valor} n\u00e3o est\u00e1 na lista.\"\n\nprint(buscar_elemento(arr_seq, num))\n\narr_slice = list(range(20))\nprint(\"slice 5:15:2\")\nprint(arr_slice[5:15:2])\n\nlista_extendida = [1, 2, 3]\nlista_extendida.extend([4, 5, 6])\nprint(\"ap\u00f3s extend:\")\nprint(lista_extendida)\n\nnums = [10, 3, 6, 2, 8, 4]\nprint(\"Verifica\u00e7\u00f5es:\")\nprint(\"tem n\u00famero par?:\", any(n % 2 == 0 for n in nums))\nprint(\"todos s\u00e3o positivos?:\", all(n > 0 for n in nums))\n\nprint(\"valores estat\u00edsticos:\")\nprint(\"m\u00e1x:\", max(nums))\nprint(\"m\u00edn:\", min(nums))\nprint(\"soma:\", sum(nums))\nprint(\"ordenado:\", sorted(nums))\n\nmatriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\n",
+            "lines": "108"
         }
     ]
 }

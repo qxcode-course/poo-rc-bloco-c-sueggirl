@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-19_19-59-34",
+            "content": "@@ -1,50 +0,0 @@\n-%0A%0A%0A%0Ad%0A%0Adefds%0A%0Ad%0Ad%0Ad%0Asw%0Aw%0Aw%0Aw%0Aw%0Aw%0Aw%0Aw%0Aw%0A2q%0Aq%0Aw%0As%0Aqw\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-19_20-19-39",
+            "content": "\n\n\n\nd\n\ndefds\n\nd\nd\nd\nsw\nw\nw\nw\nw\nw\nw\nw\nw\n2q\nq\nw\ns\nqw",
+            "lines": "25"
+        }
+    ]
+}
